@@ -2,7 +2,7 @@
 function convertToRoman(num) {
 
   num = document.getElementById("enteredNum").value;
-  if(num === '') {
+  if(num === '' || isNaN(num)) {
     alert("Please enter a number.");
     return false;
   }
