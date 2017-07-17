@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roman Numeral Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet">
+	<style>
+      body { 
+        text-align: center;
+        background-color: #BCD8DE;
+      }
+      .intro {
+        font-family: 'Rasa', serif;
+      }
+      .float {
+        width: 200px;
+        border: 25px solid #8E9DA0;
+        border-radius: 10px;
+        padding: 40px;
+        margin: auto;
+        background-color: #D5AF8B;
+        margin-top: 50px;
+        overflow-y: hidden;
+      }
+      #enteredNum {
+         border: none; 
+      }
+      #clicked {
+        background-color:#4B5F51;
+        color: #FBE673;
+        font-size: .95em;
+        font-weight: 300;
+        padding: 8px;
+        cursor: pointer;
+        border: none;
+      }
+
+	</style>
+</head>
+<body>
+<div class="float">
+  <div class="intro">
+    <h1>Roman Numeral Converter</h1>
+    <p style="font-size: .9em">Enter a number, and get the equivalent Roman number.</p>
+  </div>
+  
+    <p>Number to be converted: </p>
+    <input type="text" id="enteredNum" class="animated fadeInLeft">
+    <button id="clicked" onclick="convertToRoman()" class="animated fadeInRight">Convert!</button>
+    
+    <div id="display">
+    <!-- Roman number will show here. -->
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
