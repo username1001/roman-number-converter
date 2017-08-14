@@ -2,7 +2,7 @@ function convertToRoman(num) {
   
   num = document.getElementById("enteredNum").value;
   
-  if(num === '' || isNaN(num)) {
+  if (num === '' || isNaN(num)) {
     alert("Please enter a number.");
     return false;
   }
@@ -15,7 +15,7 @@ function convertToRoman(num) {
   var converted = '';  
 
   // Run through the modern numbers array
-  for(var i = 0; i < modern_numbers.length; i++) {
+  for (var i = 0; i < modern_numbers.length; i++) {
 
     // check if the current modern number is less than or equal to num(the entered number).
      while (modern_numbers[i] <= num) {
