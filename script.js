@@ -1,9 +1,12 @@
 function convertToRoman(num) {
+  
   num = document.getElementById("enteredNum").value;
+  
   if(num === '' || isNaN(num)) {
     alert("Please enter a number.");
     return false;
   }
+  
   // Arrays that contain the two number systems for conversion.
   var roman_numbers = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']; 
   var modern_numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
