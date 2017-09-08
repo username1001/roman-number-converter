@@ -20,7 +20,7 @@ function convertToRoman(num) {
     // check if the current modern number is less than or equal to num(the entered number).
      while (modern_numbers[i] <= num) {
 
-       // and add it into converted string as a roman number
+       // and let the conversion begin
       converted += roman_numbers[i];
       num -= modern_numbers[i];
     }
